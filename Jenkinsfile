@@ -21,7 +21,7 @@ sh 'mvn clean package'
 
 stage('Archive'){
 steps{
-archiveartifacts artifacts:'target/*.war',fingerprint:true
+archiveArtifacts artifacts:'target/*.war',fingerprint:true
 }
 }
 
